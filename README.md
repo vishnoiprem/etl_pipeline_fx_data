@@ -1,39 +1,31 @@
-# ETL Pipeline for FX Data
+## Getting Started
 
-## Project Structure
+### Prerequisites
 
+- Python 3.7 or above
+- Required Python packages (listed in `requirements.txt`)
 
+### Installation
 
-# Data ETL Process
-
-## Requirements
-
-- Python 3.x
-- pandas
-
-## Instructions
-
-1. Install the required packages:
-    ```
-    pip install pandas
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/vishnoiprem/etl_pipeline_fx_data.git
+    cd etl_pipeline_fx_data
     ```
 
-2. Run the ETL script:
+2. Create a virtual environment and activate it:
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
     ```
-    python etl.py
+
+3. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
     ```
 
-3. The output file will be saved as `transformed_data.csv.gz`.
+### Running the ETL Pipeline
 
-## Assumptions and Limitations
-
-- The script assumes the input file is named `sample_fx_data_B.csv.gz` and is located in the same directory as the script.
-- Only data for `USD/JPY` and `EUR/JPY` currency pairs from the year 2024 onwards are processed.
-- The output is saved in a compressed CSV format.
-
-## Optional Unit Tests
-
-To run the unit tests, use the following command:
-    ```
-    python -m unittest discover tests
-    ```
+To run the ETL pipeline, use the following command:
+```bash
+python scripts/data_etl.py
