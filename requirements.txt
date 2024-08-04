@@ -3,3 +3,4 @@ numpy==1.21.2
 matplotlib==3.4.3
 jupyter==1.0.0
 pytest==6.2.5
+statsmodels==23.2.1
